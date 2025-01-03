@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
-    'django.contrib.sites', # To load pages for allauth
+    # 'django.contrib.sites', # To load pages for allauth
 ]
 
 MIDDLEWARE = [
