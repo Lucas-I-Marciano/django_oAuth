@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def index(request) :
     return render(request, 'tech/index.html')
+
+def members(request):
+    return render(request, 'tech/members.html')
