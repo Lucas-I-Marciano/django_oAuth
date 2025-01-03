@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
-    # 'django.contrib.sites', # To load pages for allauth
+    'django.contrib.sites', # To load pages for allauth
 ]
 
 MIDDLEWARE = [
@@ -144,7 +144,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
-    'google': {
+    'github': {
         # For each OAuth based provider, either add a ``SocialApp``
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
