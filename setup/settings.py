@@ -155,3 +155,10 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+# Controls whether or not the endpoints for initiating a social login require a POST request to initiate the handshake
+SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_LOGOUT_ON_GET = True
+
+# The default behaviour is to redirect authenticated users to LOGIN_REDIRECT_URL
+LOGIN_REDIRECT_URL = '/members'
