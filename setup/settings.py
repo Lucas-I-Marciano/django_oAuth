@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
-    # 'django.contrib.sites', # To load pages for allauth
+    'django.contrib.sites', # To load pages for allauth
 ]
 
 MIDDLEWARE = [
@@ -144,7 +144,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Provider specific settings
 SOCIALACCOUNT_PROVIDERS = {
-    'google': {
+    'github': {
         # For each OAuth based provider, either add a ``SocialApp``
         # (``socialaccount`` app) containing the required client
         # credentials, or list them here:
@@ -155,3 +155,11 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+# Controls whether or not the endpoints for initiating a social login require a POST request to initiate the handshake
+SOCIALACCOUNT_LOGIN_ON_GET = True
+ACCOUNT_LOGOUT_ON_GET = True
+
+# The default behaviour is to redirect authenticated users to LOGIN_REDIRECT_URL
+LOGIN_REDIRECT_URL = '/members'
+LOGOUT_REDIRECT_URL = '/'
