@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'index.css' %}" />
+    <link rel="stylesheet" href="{% static 'members.css' %}" />
     <title>Tech</title>
   </head>
   <body>
@@ -20,9 +20,11 @@
     <main>
       <h1>Área de Membros</h1>
       <p>Uma área para os membros logados na Aplicação</p>
-      <a href="{% url 'account_logout' %}">
-        <button class="logout">Logout</button>
-      </a>
+      <div class="logout-btn-container">
+        <a href="{% url 'account_logout' %}" class="logout-btn">
+          <button class="logout">Logout</button>
+        </a>
+    </div>
     </main>
   </body>
 </html>
