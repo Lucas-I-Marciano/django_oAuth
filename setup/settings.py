@@ -162,3 +162,4 @@ ACCOUNT_LOGOUT_ON_GET = True
 
 # The default behaviour is to redirect authenticated users to LOGIN_REDIRECT_URL
 LOGIN_REDIRECT_URL = '/members'
+LOGOUT_REDIRECT_URL = '/'
