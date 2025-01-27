@@ -2,6 +2,15 @@
 
 This project provides a Django-based web application with GitHub OAuth 2.0 authentication using the `django-allauth` library. It follows best practices for Django project setup, including a dedicated `setup` application, a `templates` directory for templates, and a Python virtual environment for development.
 
+<div>
+
+<img width="400" height="300" src="https://github.com/user-attachments/assets/ee74a48b-68e1-490d-85b3-f14f4aa9064f">
+<img width="150" height="300" src="https://github.com/user-attachments/assets/527e6d16-037f-4397-98d3-5f2f23366bcf">
+<img width="400" height="300" src="https://github.com/user-attachments/assets/65504250-48c7-4e91-9756-bb7b63443ba1">
+
+</div>
+
+
 ## Key Features
 
 *   **GitHub OAuth 2.0 Authentication:** Securely authenticate users using their GitHub accounts.
